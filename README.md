@@ -95,4 +95,8 @@ Colabora con QGIS, hazte socio! www.qgis.es
 
 Fí
 
+1) USER: postgres PASS: postgres5432 PORT: 5432
+2) DESCLICAR PGADMIN 4 EN LA INSTALACION
+3) LUEGO DE INSTALAR DESCARGAR DBEAVER
+
 
