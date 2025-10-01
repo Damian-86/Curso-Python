@@ -95,9 +95,11 @@ Colabora con QGIS, hazte socio! www.qgis.es
 
 Fí
 
-1) USER: postgres PASS: postgres5432 PORT: 5432
+1) USER: postgresPASS: postgres5432 PORT: 5432 HOST: localhost DBNAME: postgres
 2) DESCLICAR PGADMIN 4 EN LA INSTALACION
 3) LUEGO DE INSTALAR DESCARGAR POR SEPARADO PGADMIN 4 DESDE LA PAGINA OFICIAL Y DESCARGAR LA MAS RECIENTE > https://www.pgadmin.org/download/
 4) AHORA SI PUEDES ENTRAR A POSTGRESQL DESDE EL SERVIDOR PGADMIN4 EN INICIO
 
-
+dentro de posgre click derecho en server > propieties y poner los datos estos  USER: postgres PASS: postgres5432 PORT: 5432 HOST: localhost DBNAME: postgres
+propieties: nodos > desmarcar las 6 primeras y las  4 FTS 
+en result grid > maximun column width 120/150
