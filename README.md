@@ -104,3 +104,23 @@ dentro de posgre click derecho en server > propieties y poner los datos estos  U
 propieties: nodos > desmarcar las 6 primeras y las  4 FTS 
 en result grid > maximun column width 120/150
 user interfase > theme dark
+para reiniciar postgre ir a la lupa > servicios > postgres 17 en ejecucion > reiniciar (esto mas que nada cuando cambias ficheros seguro tengas que reiniciar)
+
+para crear base de datos > click derecho en databases > create
+
+crear nuevo usuario: abrir un query tool y ejecutar:
+CREATE ROLE gisadmin login PASSWORD 'postgres5432' SUPERUSER CREATEDB CREATEROLE NOINHERIT;
+quitarle poder a postgres cerramos conexion click derecho en el server POSTGRESQL 17 disconect, luego click derecho propiedades y cambiar user a gisadmin y pass postgres5432
+luego conectar y ir a login > postgre click derecho > propiedades > privilegios y desclickear todas menos super user, lo importante es quitarle can login 
+
+crear un schema
+forma 1. click derecho sobre schema , crear schema
+forma 2.
+CREATE SCHEMA limit_admin
+    AUTHORIZATION gisadmin;
+
+COMMENT ON SCHEMA limit_admin
+    IS 'Limites Administrativos';
+
+ejecutar fichero espais_pein.sql en notepad ++ luego ctr A ctr C ctr V en query tool
+
